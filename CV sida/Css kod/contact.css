@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+/* Navbar */
+
+.nav-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 2.2rem;
+  overflow: hidden;
+  font-size: 1.7rem;
+  background-color: #000;
+  padding: 3rem;
+  border-radius: 6px;
+}
+
+
+.nav-meny {
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.nav-item {
+  flex: 1 0 100%;
+  text-align: center;
+}
+
+.nav-meny a {
+  display: block;
+  text-decoration: none;
+  letter-spacing: 0.5rem;
+  padding: 1.2rem;
+  color: beige;
+  transition: all ease-in-out 0.5s;
+}
+
+
+.nav-meny a:hover {
+  background-color: #EAD7BB;
+  transform: scale(1.1);
+}
+
+.nav-meny a:active {
+  transform: scale(0.9);
+}
+
+.card {
+  /* border: 2px solid black; */
+
+  width: 80%;
+  height: 50rem;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  max-width: 50%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 3.4rem;
+  margin-bottom: auto;
+}
+
+ul {
+  font-size: 1.6rem;
+  margin-top: auto;
+}
+
+
+/* Footer */
+
+footer {
+  background-color: black;
+  padding: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+i {
+  color: white;
+  font-size: 3rem;
+  margin: 2rem;
+}
+
+@media (min-width: 700px) {
+
+  .nav-item {
+    flex: 1 0 10%;
+  }
+
+  .card {
+    height: 70rem;
+  }
+
+}
+ 
+
+
