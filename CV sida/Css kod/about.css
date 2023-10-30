@@ -55,14 +55,16 @@ body {
 }
 
 
-.nav-meny a:hover {
-  background-color: #EAD7BB;
-  transform: scale(1.1);
-}
+ .nav-meny a:hover {
+    background-color: #EAD7BB;
+    transform: scale(1.1);
+ }
+
 
 .nav-meny a:active {
   transform: scale(0.9);
 }
+
 
 
 /* Main med bild och text om mig */
