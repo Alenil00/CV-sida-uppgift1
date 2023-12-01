@@ -173,3 +173,22 @@ function moveBasedOnMouse(e) {
   document.removeEventListener('mouseup', moveBasedOnMouse);
   carouselContent.removeEventListener('mousemove', slightMove);
 }
+
+
+// Min egna JavaScript som ska ändra profilbilden till en annan till varje klick
+
+const profileImg = document.getElementById('profile-img');
+const changeBtn = document.getElementById('change-btn');
+
+let firstImage = true;
+
+changeBtn.addEventListener('click', function(){
+  
+  if (firstImage) {
+    profileImg.src = '../image/contact.jpg';
+  } else {
+    profileImg.src = '../image/CVbild.jpg';
+  }
+  firstImage = !firstImage;
+});
+
