@@ -145,26 +145,27 @@ body {
   position: absolute;
   z-index: 1;
   transition: left .4s cubic-bezier(.47,.13,.15,.89);
+  border-radius: 15px;
 }
 
 .slide-1 {
-  background-color: #EAD7BB;
+  background-color: #F3EEEA;
 }
 
 .slide-2 {
-  background-color: pink;
+  background-color: #e0dad0;
 }
 
 .slide-3 {
-  background-color: green;
+  background-color: #B0A695;
 }
 
 .slide-4 {
-  background-color: purple;
+  background-color: #776B5D;
 }
 
 .slide-5 {
-  background-color: yellow;
+  background-color: #665c50;
 }
 
 .nav {
@@ -180,7 +181,6 @@ body {
   border: none;
   outline: none;
   color: white;
-  -webkit-user-select: none;
 }
 
 .nav-left {
@@ -201,60 +201,27 @@ body {
   margin-top: 2px;
 }
 
-/* Project cards */
-
-.rubrik {
-  font-size: 3rem;
-  margin: 0.4em;
-}
-
-.project-section {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.cards {
-  /* border: 2px solid black; */
-  height: 25rem;
-  width: 20rem;
-  margin: 0.6em;
-  display: flex;
-  /* justify-content: center;
-  align-items: end; */
-}
-
-.project-card1 {
-  background-image: url(../image/AI-min.jpeg);
-  background-position: left;
-}
-
-.project-card2{
-  background-image: url(../image/mobility.jpg);
-  background-repeat: none;
-}
-
-.project-card3 {
-  background-image: url(../image/facts1-min.jpg);
-  background-position: top;
-}
-
-.project-card4 {
-  background-image: url(../image/mountain.jpg);
-  background-position: center;
-}
-
-.project-card1, .project-card2, .project-card3, .project-card4 {
-  filter: grayscale(100%);
+.project-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.project-text {
-  color: white;
-  font-size: 1.4rem;
-  padding: 1.2rem;
+.game-link {
+  margin-top: 25rem;
 }
+
+.game-btn {
+  padding: 2.5rem;
+  border-radius: 0.5rem;
+}
+
+.game-title {
+  font-size: 2rem;
+}
+
+
 
 button {
   background-color: #000;
