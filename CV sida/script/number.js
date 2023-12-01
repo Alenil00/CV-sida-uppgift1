@@ -30,8 +30,8 @@ guessBtn.addEventListener('click', function(){
     const listItem = document.createElement("li");
     listItem.textContent = `${userGuess} är tyvärr för högt försök igen!`;
     guessList.appendChild(listItem);
-    userGuess.textContent = '';
-    beginBtn.textContent = (`Spela igen!`);
+    // userGuess.textContent = '';
+    // beginBtn.textContent = (`Spela igen!`);
   } else if (userGuess == startNumber) {
     guessNumber --;
     guessLeft.textContent = `Du har ${guessNumber} gissningar kvar!`;
@@ -41,9 +41,6 @@ guessBtn.addEventListener('click', function(){
     guessBtn.disabled = true;
     beginBtn.textContent = (`Spela igen!`);
     guessLeft.textContent = (`GRATTIS!!! Du vann, hämta kakan i baren och du får ett glas mjölk till!`);
-  } else if (guessNumber === 0) {
-    guessLeft.textContent = ("Tyvärr har du inga gissnignar kvar det korrekta svaret var " + startNumber);
-    beginBtn.textContent = (`Spela igen!`);
   } else{
     guessNumber --;
     guessLeft.textContent = `Du har ${guessNumber} gissningar kvar!`;
@@ -52,12 +49,15 @@ guessBtn.addEventListener('click', function(){
     guessList.appendChild(listItem);
   }
 
+  if (guessNumber == 0){
+    guessLeft.textContent = ("Tyvärr har du inga gissnignar kvar det korrekta svaret var " + startNumber);
+    beginBtn.textContent = (`Spela igen!`);
+  }
+
  
   if (guessNumber < 0){
   window.location.reload();
 }
-
-
 
 });
 
