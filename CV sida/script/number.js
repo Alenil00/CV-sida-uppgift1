@@ -54,6 +54,7 @@ guessBtn.addEventListener('click', function(){
     beginBtn.textContent = (`Spela igen!`);
   }
 
+  
  
   if (guessNumber < 0){
   window.location.reload();
