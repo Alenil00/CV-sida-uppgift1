@@ -74,65 +74,8 @@ body {
   justify-content: center;
 }
 
-.main-cards {
-  /* border: 2px solid black; */
-  width: 45rem;
-  height: 28em;
-  margin: 1em;
-}
 
-.profile-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 
-.card2 {
-  display: flex;
-  flex-direction: column;
-}
-
-.profiltext {
-  font-size: 1.6rem;
-  letter-spacing: 0.2rem;
-  margin: 1.2rem;
-  object-fit: contain;
-}
-
-.cv-link {
-  /* text-decoration: none; */
-  color: #000;
-  margin-top: auto;
-  margin-left: 1rem;
-  font-size: 1.4rem;
-}
-
-span {
-  font-size: 3rem;
-}
-
-/* Project cards */
-
-.rubrik {
-  font-size: 3rem;
-  margin: 0.4em;
-}
-
-.project-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cards {
-  border: 2px solid black;
-  height: 25rem;
-  width: 20rem;
-  margin: 0.6em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
 
 strong {
   font-size: 2rem;
@@ -144,37 +87,11 @@ p {
   font-size: 1.6rem;
 }
 
-.project-text {
-  color: white;
-  font-size: 1.4rem;
-  padding: 1.2rem;
-}
-
-button {
-  background-color: #000;
-  color: beige;
-  padding: 0.6em 1em;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.8;
-  margin-top: auto;
-  margin-bottom: 1em;
-  border: none;
-}
 
 
-.hide {
-  display: none;
-  font-size: 1.6rem;
-}
-
-.project-button:hover + .hide {
-  display: block;
-  color: white;
-}
-
-.link {
-  color: beige;
+.ruta {
+  border: 4px ridge black;
+  margin: 2rem;
 }
 
 

@@ -74,88 +74,114 @@ margin: 0;
 
 
 
-/* Project cards */
-
-.rubrik {
-  font-size: 3rem;
-  margin: 0.4em;
+/* test nya project cards */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-.project-section {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+
+.carousel {
+  position: relative;
+  width: 50%;
+  height: 20rem; 
+  margin: 0 auto;
 }
 
-.cards {
-  /* border: 2px solid black; */
-  height: 25rem;
-  width: 20rem;
-  margin: 0.6em;
-  display: flex;
-  /* justify-content: center;
-  align-items: end; */
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
 }
 
-.project-card1 {
-  background-image: url(../image/AI-min.jpeg);
-  background-position: left;
+.slide {
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+  border-radius: 15px;
 }
 
-.project-card2{
-  background-image: url(../image/mobility.jpg);
-  background-repeat: none;
+.slide-1 {
+  background-color: #F3EEEA;
 }
 
-.project-card3 {
-  background-image: url(../image/facts1-min.jpg);
-  background-position: top;
+.slide-2 {
+  background-color: #e0dad0;
 }
 
-.project-card4 {
-  background-image: url(../image/mountain.jpg);
-  background-position: center;
+.slide-3 {
+  background-color: #B0A695;
 }
 
-.project-card1, .project-card2, .project-card3, .project-card4 {
-  filter: grayscale(100%);
+.slide-4 {
+  background-color: #776B5D;
+}
+
+.slide-5 {
+  background-color: #665c50;
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  background-color: rgba(150,150,150,.3);
+  width: 20px;
+  height: 20px;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+.nav-left {
+  left: -25px;
+}
+
+.nav-right {
+  right: -25px;
+}
+
+.carousel-arrow-icon-left {
+  margin-left: 5px;
+  margin-top: 2px;
+}
+
+.carousel-arrow-icon-right {
+  margin-left: 7px;
+  margin-top: 2px;
+}
+
+.project-cards {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.project-text {
-  color: white;
-  font-size: 1.4rem;
-  padding: 1.2rem;
-}
 
-button {
+
+.game-btn {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
   background-color: #000;
-  color: beige;
-  padding: 0.6em 1em;
-  text-decoration: none;
-  text-align: center;
-  font-size: 1.8;
-  margin-top: auto;
-  margin-bottom: 1em;
-  border: none;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 1rem;
 }
 
-
-.hide {
-  display: none;
+.game-title {
   font-size: 1.6rem;
 }
 
-.project-button:hover + .hide {
-  display: block;
-  color: white;
-}
 
-.link {
-  color: beige;
-}
+
 
 /* Footer */
 

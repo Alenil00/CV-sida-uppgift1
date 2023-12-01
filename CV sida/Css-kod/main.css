@@ -123,8 +123,6 @@ body {
 }
 
 
-
-
 .carousel {
   position: relative;
   width: 50%;
@@ -208,17 +206,19 @@ body {
   align-items: center;
 }
 
-.game-link {
-  margin-top: 25rem;
-}
+
 
 .game-btn {
-  padding: 2.5rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
+  background-color: #000;
+  color: white;
+  font-size: 1.6rem;
+  margin-top: 1rem;
 }
 
 .game-title {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 
@@ -329,6 +329,15 @@ i {
     height: 40rem;
   }
 
+  .game-btn {
+    padding: 2rem;
+    font-size: 2rem;
+    margin-top: 20rem;
+  }
+
+  .game-title {
+    font-size: 2rem;
+  }
 
 }
 
